@@ -16,7 +16,7 @@ namespace WebAPITutorial.Services
             };
         }
 
-        public static List<Pizza> GetAll => Pizzas;
+        public static List<Pizza> GetAll() => Pizzas;
 
         public static Pizza? Get(int id) => Pizzas.FirstOrDefault(x => x.Id == id);
 
